@@ -43,7 +43,7 @@ extern "C" int posix_memalign(void **, size_t, size_t) throw ();
 #endif
 
 static __inline void *
-//_mm_malloc(size_t size, size_t alignment)
+_mm_malloc(size_t size, size_t alignment)
 {
 	void *ptr;
 	if (alignment == 1)
